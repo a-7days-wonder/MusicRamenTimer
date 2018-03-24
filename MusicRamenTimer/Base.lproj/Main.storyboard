@@ -19,10 +19,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6mt-YB-G7B">
-                                <rect key="frame" x="87" y="323" width="201" height="21"/>
+                                <rect key="frame" x="163" y="323" width="49" height="21"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大体3分の曲を再生します" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNw-oA-kGX">
-                                <rect key="frame" x="87" y="323" width="201" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残り : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNw-oA-kGX">
+                                <rect key="frame" x="163" y="323" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RuC-Lr-4QV">
+                                <rect key="frame" x="67" y="40" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="1lZ-I8-D3h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5E-h7-Wei">
+                                <rect key="frame" x="156" y="384" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dts-IA-4mv">
+                                <rect key="frame" x="156" y="445" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmm-s3-Q5n">
+                                <rect key="frame" x="160" y="506" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,20 +54,38 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="R5E-h7-Wei" firstAttribute="centerX" secondItem="jff-N6-WxM" secondAttribute="centerX" id="2N4-ll-DF9"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="trailing" secondItem="6mt-YB-G7B" secondAttribute="trailing" id="71K-rU-O2m"/>
+                            <constraint firstItem="RuC-Lr-4QV" firstAttribute="centerX" secondItem="jff-N6-WxM" secondAttribute="centerX" id="BLS-rr-ede"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="top" secondItem="6mt-YB-G7B" secondAttribute="top" id="C6c-qe-VTl"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="bottom" secondItem="6mt-YB-G7B" secondAttribute="bottom" id="ET6-vD-mGc"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="centerY" secondItem="jff-N6-WxM" secondAttribute="centerY" id="KpT-VS-Lz8"/>
+                            <constraint firstItem="dts-IA-4mv" firstAttribute="top" secondItem="R5E-h7-Wei" secondAttribute="bottom" constant="40" id="Qqi-co-dJm"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="leading" secondItem="6mt-YB-G7B" secondAttribute="leading" id="RhS-Ko-P8q"/>
+                            <constraint firstItem="Gmm-s3-Q5n" firstAttribute="centerX" secondItem="jff-N6-WxM" secondAttribute="centerX" id="UOw-g3-ZK0"/>
                             <constraint firstItem="aNw-oA-kGX" firstAttribute="centerX" secondItem="jff-N6-WxM" secondAttribute="centerX" id="bOh-9v-Rs5"/>
+                            <constraint firstItem="RuC-Lr-4QV" firstAttribute="top" secondItem="9a6-zz-fP1" secondAttribute="top" constant="20" id="fpN-l8-rHe"/>
+                            <constraint firstItem="RuC-Lr-4QV" firstAttribute="leading" secondItem="9a6-zz-fP1" secondAttribute="leading" constant="67" id="ppj-bS-R1r"/>
+                            <constraint firstItem="R5E-h7-Wei" firstAttribute="top" secondItem="6mt-YB-G7B" secondAttribute="bottom" constant="40" id="qqL-TR-rc0"/>
+                            <constraint firstItem="dts-IA-4mv" firstAttribute="centerX" secondItem="jff-N6-WxM" secondAttribute="centerX" id="s1a-Ac-o5Q"/>
+                            <constraint firstItem="dts-IA-4mv" firstAttribute="leading" secondItem="R5E-h7-Wei" secondAttribute="leading" id="ttG-EH-JyR"/>
+                            <constraint firstItem="Gmm-s3-Q5n" firstAttribute="top" secondItem="dts-IA-4mv" secondAttribute="bottom" constant="40" id="xJq-ou-yHj"/>
+                            <constraint firstItem="dts-IA-4mv" firstAttribute="centerX" secondItem="aNw-oA-kGX" secondAttribute="centerX" id="xpr-zv-7tT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9a6-zz-fP1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="RLc-gs-OW5"/>
+                    <connections>
+                        <outlet property="Album" destination="dts-IA-4mv" id="vPu-1v-jU9"/>
+                        <outlet property="Artist" destination="Gmm-s3-Q5n" id="8Z0-38-0Sb"/>
+                        <outlet property="Artwork" destination="RuC-Lr-4QV" id="3vu-z3-MBA"/>
+                        <outlet property="SongTitle" destination="R5E-h7-Wei" id="Sph-dZ-3hm"/>
+                        <outlet property="Time" destination="aNw-oA-kGX" id="Ben-bf-31G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2L-Yf-lKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="-708"/>
+            <point key="canvasLocation" x="813.60000000000002" y="-708.39580209895053"/>
         </scene>
     </scenes>
 </document>
