@@ -12,7 +12,6 @@
 		DE7AD5D9201EE3580092B491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7AD5D8201EE3580092B491 /* Assets.xcassets */; };
 		DE7AD5DC201EE3580092B491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7AD5DA201EE3580092B491 /* LaunchScreen.storyboard */; };
 		DE7AD5E4201EE69A0092B491 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AD5E3201EE69A0092B491 /* PlayerViewController.swift */; };
-		DE7AD5E6201EE7E60092B491 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7AD5E5201EE7E60092B491 /* SelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		DE7AD5DB201EE3580092B491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE7AD5DD201EE3580092B491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7AD5E3201EE69A0092B491 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		DE7AD5E5201EE7E60092B491 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 			children = (
 				DE7AD5CF201EE3580092B491 /* AppDelegate.swift */,
 				DE7AD5E3201EE69A0092B491 /* PlayerViewController.swift */,
-				DE7AD5E5201EE7E60092B491 /* SelectViewController.swift */,
 				DE7AD5D5201EE3580092B491 /* Main.storyboard */,
 				DE7AD5D8201EE3580092B491 /* Assets.xcassets */,
 				DE7AD5DA201EE3580092B491 /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7AD5D0201EE3580092B491 /* AppDelegate.swift in Sources */,
-				DE7AD5E6201EE7E60092B491 /* SelectViewController.swift in Sources */,
 				DE7AD5E4201EE69A0092B491 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
